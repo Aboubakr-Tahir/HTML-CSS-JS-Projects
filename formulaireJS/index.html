@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Aboubakr Tahir</title>
+  </head>
+  <body>
+    <form id="inscriptionForm">
+      <fieldset>
+        <legend>Votre identité</legend>
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="nom">Nom</label></td>
+              <td>
+                <input
+                  class="champ-form"
+                  id="nom"
+                  type="text"
+                  placeholder="Prenom et Nom"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="prenom">Filière</label></td>
+              <td>
+                <datalist id="filieres-list">
+                  <option value="ISIBD"></option>
+                  <option value="GI"></option>
+                  <option value="aero"></option>
+                  <option value="mecatrnoque"></option>
+                  <option value="gee"></option>
+                </datalist>
+                <input
+                  class="champ-form"
+                  id="filiere"
+                  type="text"
+                  list="filieres-list"
+                  placeholder="Filiere"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Email</label></td>
+              <td>
+                <input
+                  class="champ-form"
+                  type="Email"
+                  placeholder="exemple@domaine.com"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Téléphone</label></td>
+              <td>
+                <input
+                  class="champ-form"
+                  type="number"
+                  placeholder="par ex : 0612685418"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Bacalaureat</legend>
+        <fieldset>
+          <legend>Type de bacalaureat</legend>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <label for="SM">Science Mathématique</label
+                  ><input
+                    class="champ-form"
+                    name="choix"
+                    type="radio"
+                    id="SM"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="PC">Science physique</label
+                  ><input
+                    class="champ-form"
+                    name="choix"
+                    type="radio"
+                    id="PC"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="SVT">Science de la vie et de la terre</label
+                  ><input
+                    class="champ-form"
+                    name="choix"
+                    type="radio"
+                    id="SVT"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset>
+          <table>
+            <tbody>
+              <tr>
+                <td><label for="Obtention">Date d'obtention</label></td>
+                <td><input class="champ-form" id="Obtention" type="date" /></td>
+              </tr>
+              <tr>
+                <td><label for="">Mention</label></td>
+                <td><input class="champ-form" type="text" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Votre Compte</legend>
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="login">login</label></td>
+              <td>
+                <input
+                  class="champ-form"
+                  placeholder="login"
+                  id="login"
+                  type="text"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password">Mot de passe</label></td>
+              <td>
+                <input
+                  class="champ-form"
+                  type="password"
+                  placeholder="mot de passe"
+                  id="password"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <fieldset>
+        <table class="butona">
+          <tbody>
+            <tr>
+              <td>
+                <button id="inscription">Inscription</button>
+                <p id="errorMsg"></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
